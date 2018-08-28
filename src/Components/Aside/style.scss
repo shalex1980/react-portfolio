@@ -1,0 +1,20 @@
+@import './../../scss/common/variable.scss';
+@import './../../scss/common/mixins.scss';
+
+aside {
+	width: $aside_w;
+	padding: $gl_pt $gl_pl;
+	color: #fff;
+	ul {
+		margin-top: 30px;
+	}
+	.list-group-item {
+		cursor: pointer;
+		background: transparent;
+		a {
+			display: block;
+			font-size: 1.2em;
+			font-style: italic;
+		}
+	}
+}

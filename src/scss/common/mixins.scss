@@ -1,0 +1,9 @@
+@mixin outl($color: #000 , $size: 1px) {
+	outline: solid $size $color;
+}
+@mixin flex($justify : space-between, $align : flex-start, $wrap : wrap) {
+	display: flex;
+	flex-wrap : $wrap;
+	justify-content: $justify;
+	align-items: $align
+}

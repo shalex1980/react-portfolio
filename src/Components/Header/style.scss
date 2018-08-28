@@ -1,0 +1,28 @@
+@import './../../scss/common/variable.scss';
+@import './../../scss/common/mixins.scss';
+
+header {
+	height: $gl_h;
+	padding: $gl_pt $gl_pl;
+	color: #fff;
+	background: $gl_bg;
+	@include outl();
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&-logo {
+		font-size: 38px
+	}
+	&-prof{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		&__img {
+			width: 100px;
+			margin-right: 20px;
+		}
+	}
+}
+

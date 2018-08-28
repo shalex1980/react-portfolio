@@ -1,0 +1,13 @@
+@import './../../scss/common/variable.scss';
+@import './../../scss/common/mixins.scss';
+
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: $gl_h;
+	padding: $gl_pt $gl_pl;
+	color: #fff;
+	background: $gl_bg;
+}

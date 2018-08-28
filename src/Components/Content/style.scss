@@ -1,0 +1,9 @@
+@import './../../scss/common/variable.scss';
+@import './../../scss/common/mixins.scss';
+
+$aside_w : 200px;
+
+.content {
+  width: calc(100% - #{$aside_w});
+	padding: $gl_pt $gl_pl;
+}

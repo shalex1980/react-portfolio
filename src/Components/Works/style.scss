@@ -1,0 +1,15 @@
+@import  './../../scss/common/mixins.scss';
+.works {
+	&-wrap {
+		@include  flex(space-between, stretch);
+	}
+	&-pagin {
+		text-align: center;
+	}
+}
+
+@media (max-width: 860px) {
+	.works-wrap {
+		justify-content: center;
+	}
+}

@@ -1,0 +1,20 @@
+@import './scss/common/variable.scss';
+@import './scss/common/mixins.scss';
+
+html, body {
+	height: 100%
+}
+#root {
+	height: 100%;
+}
+.App {
+	position: relative;
+	padding-bottom: 100px;
+	min-height: 100%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,207cca+25,207cca+25,2989d8+25,7db9e8+100 */
+	background: #1e5799; /* Old browsers */
+	background: -moz-linear-gradient(left, #b7b7b7 0%, #b7b7b7 200px, #f6f6f6 200px, #f6f6f6 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #b7b7b7 0%,#b7b7b7 200px,#f6f6f6 200px,#f6f6f6 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #b7b7b7 0%,#b7b7b7 200px,#f6f6f6 200px,#f6f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
+}

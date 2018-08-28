@@ -1,0 +1,52 @@
+@import './../../scss/common/variable.scss';
+@import './../../scss/common/mixins.scss';
+
+.work-single {
+	.panel {
+		border-radius: $gl_radius;
+		&-default {
+			.panel-heading {
+				background: #fff;
+			}
+		}
+		&-heading {
+			text-align: center;
+			font-weight: 700;
+		}
+		.panel-describe {
+			@include flex();
+			font-size: 18px;
+			font-weight: 500;
+			font-style: italic;
+			ul {
+				list-style-type: none;
+				&:first-of-type {
+					width: calc(100% - 200px);
+				}
+				&:last-of-type {
+					width: 	150px;
+				}
+			}
+			.btn {
+				position: relative;
+				display: block;
+				margin-bottom: 10px;
+				text-align: left;
+				font-weight: 700; 
+				font-style: normal;
+				span {
+					margin: 0 10px;
+				}
+			}
+		}
+
+		&-body {
+			img {
+				margin: auto;
+			}
+		}
+		&-footer {
+			background: #fff;
+		}
+	}
+}
