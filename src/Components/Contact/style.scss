@@ -1,0 +1,49 @@
+$step : 20px;
+$nth_size : (
+	nth-of-type(1): 20px,
+	nth-of-type(2): 40px,
+	nth-of-type(3): 60px,
+	nth-of-type(4): 80px,
+	);
+.skype {
+	overflow: hidden;
+	border: solid 1px black;
+	h2 {
+		font: {
+			weight: bold;
+			style: italic;
+			size: 2em;
+		}
+		color: blue;
+		span {
+			display: inline-block;
+			padding: 0 10px;
+			animation: rotat;
+			animation-duration: 3s;
+		}
+	}
+	h4 {
+		position: relative;
+		height: 20px;
+		font: {
+			weight: bold;
+			style: italic;
+		}
+		span {
+			position: absolute;
+			display: inline-block;
+			padding: 0 5px;
+			@each $status, $size in $nth_size {
+				&:#{$status} {
+					left: $size;
+				}
+			}
+		}
+	}
+}
+
+@keyframes rotat {
+	0% {transform: rotate(0deg)}
+	//50% {transform: rotate(180deg)}
+	100% {transform: rotate(360deg)}
+}
