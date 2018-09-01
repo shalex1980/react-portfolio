@@ -1,5 +1,5 @@
 import React from 'react';
-//import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import { CSSTransitionGroup } from 'react-transition-group';
 import { Panel, Glyphicon } from 'react-bootstrap';
 import './style.css';
 
@@ -15,7 +15,17 @@ export default (props) => {
 			<Panel className="skill">
 				<Panel.Heading>{skill.skill}</Panel.Heading>
 				<Panel.Body>
-					{temp}
+					<CSSTransitionGroup component="div"
+						transitionName="animate"
+						transitionAppear={true}
+						transitionAppearTimeout={3000}
+						transitionEnter={false}
+						transitionLeave={false}
+					>
+						<div className="star-wrap">
+							{temp}
+						</div>
+					</CSSTransitionGroup>
 				</Panel.Body>
 			</Panel>
 		)
