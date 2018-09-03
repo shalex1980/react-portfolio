@@ -55,7 +55,7 @@ const skills = [
 	},
 	{ id: "m342",
 		skill: "BEM",
-		rate : 8
+		rate : 7
 	},
 	{ id: "tr12",
 		skill: "Bootstrap",
@@ -81,6 +81,14 @@ const skills = [
 		skill: "Git",
 		rate : 5
 	},
+	{ id: "pw3242",
+		skill: "Webpack",
+		rate : 5
+	},
+	{ id: "pw32100",
+		skill: "Gulp",
+		rate : 5
+	}
 	
 ]
 
@@ -88,6 +96,7 @@ const works = [
 	{
 		id: "1wer",
 		img: img1,
+		shape: 1,
 		type: "Лендинг",
 		name: "UBR консалт",
 		metods: [
@@ -98,6 +107,7 @@ const works = [
 	{
 		id: "2wer",
 		img: img2,
+		shape: 1,
 		type: "Лендинг",
 		name: "Юристар ",
 		metods: [
@@ -117,6 +127,7 @@ const works = [
 			img3_5,
 			img3_6
 		],
+		shape: 2,
 		type: "Сайт-магазин",
 		name: "Веселый церюльник",
 		metods: [
@@ -127,6 +138,7 @@ const works = [
 	{
 		id: "4wer",
 		img: img4,
+		shape: 2,
 		type: "Сайт",
 		name: "Zdoba микс",
 		metods: [
@@ -145,6 +157,7 @@ const works = [
 			img5_3,
 			img5_4
 		],
+		shape: 2,
 		type: "Сайт",
 		name:  "Alcotek",
 		metods: [
@@ -156,6 +169,7 @@ const works = [
 	{
 		id: "6wer",
 		img: img6,
+		shape: 1,
 		type: "Лендинг",
 		name: "Zворота",
 		metods: [
@@ -166,6 +180,7 @@ const works = [
 	{
 		id: "7wer",
 		img: img7,
+		shape: 2,
 		type: "Сайт компании",
 		name: "Домокомплект",
 		metods: [
@@ -177,6 +192,7 @@ const works = [
 	{
 		id: "8wer",
 		img: img8,
+		shape: 1,
 		type: "Лендинг",
 		name: "Forum Team",
 		metods: [
@@ -187,6 +203,7 @@ const works = [
 	{
 		id: "9wer",
 		img: img9,
+		shape: 1,
 		type: "Лендинг",
 		name: "ФПК строй",
 		metods: [
@@ -205,6 +222,7 @@ const works = [
 			img10_3,
 			img10_4
 		],
+		shape: 2,
 		type: "Сайт компании",
 		name: " Prime Vertical",
 		metods: [
@@ -217,6 +235,7 @@ const works = [
 	{
 		id: "11wer",
 		img: img11,
+		shape: 1,
 		type: "Лендинг",
 		name: "ИгроДом",
 		metods: [
@@ -229,6 +248,7 @@ const works = [
 	{
 		id: "12wer",
 		img: img12,
+		shape: 1,
 		type: "Лендинг",
 		name: " СпортМаск",
 		metods: [
@@ -247,6 +267,7 @@ const works = [
 			img13_3,
 
 		],
+		shape: 2,
 		type: "Сайт-магазин",
 		name: " ЛТП-Электро",
 		metods: [
@@ -257,6 +278,7 @@ const works = [
 	{
 		id: "14wer",
 		img: img14,
+		shape: 2,
 		type: "Сайт",
 		name: "Сайт ясновидящей Дарьи Светлой",
 		metods: [
@@ -271,6 +293,7 @@ const works = [
 			img15,
 			img15_1
 		],
+		shape: 2,
 		type: "Сайт",
 		name: "Юридическая компания",
 		metods: [
@@ -286,6 +309,7 @@ const works = [
 			img16_1,
 			img16_2
 		],
+		shape: 2,
 		type: "Сайт",
 		name: 'Медицинский центр "Авиценна"',
 		metods: [
@@ -302,6 +326,7 @@ const works = [
 			img17_2,
 			img17_3
 		],
+		shape: 2,
 		type: "Сайт",
 		name: "Глагол",
 		metods: [
@@ -312,6 +337,7 @@ const works = [
 	{
 		id: "18wer",
 		img: img18,
+		shape: 1,
 		type: "Лендинг",
 		name: " Компания по строительству каркасных домов",
 		metods: [

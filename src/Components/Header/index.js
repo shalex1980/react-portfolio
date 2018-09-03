@@ -2,7 +2,7 @@ import React from 'react';
 import {Image} from 'react-bootstrap';
 import { LOGO, NAME, PROF } from './../../Data/constants';
 import './style.css';
-import Avatar from 'assets/img/avatar.jpg';
+import Avatar from 'assets/img/avatar_2.jpg';
 
 export default () => {
 	return (

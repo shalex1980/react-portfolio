@@ -1,4 +1,5 @@
 import React from 'react';
+import Sort  from '../Sort';
 import WorkUnit from './../WorkUnit';
 import {Pagination} from 'react-bootstrap';
 import {works} from './../../Data';
@@ -8,6 +9,7 @@ class Works extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
+			shape: 0,
 			countOnPage: 6,
 			page : 1
 		}
@@ -16,22 +18,30 @@ class Works extends React.Component {
 
 	handlePagin(page) {
 		return () =>  {
-			this.setState({page: page});
+			this.setState({page});
 		}
 	}
 
-	getUnitsOnPage() {
-		let from = this.state.page !== 1 ?  ((this.state.page - 1) * this.state.countOnPage - 1 ) : 0 ;
-		let to = works.length > (from + this.state.countOnPage ) ? (from + this.state.countOnPage ) : works.length;
+	handleCountOnPage = (countOnPage) => {
+			this.setState({countOnPage : parseInt(countOnPage), page: 1});
+	}
+	handleChoseShape = (shape) => {
+		this.setState({shape : parseInt(shape), page: 1});
+	}
+
+	getUnitsOnPage(choseWorks) {
+		let from =  (this.state.page - 1) * this.state.countOnPage ;
+		let to = (choseWorks.length > (from + this.state.countOnPage ) )? (from + this.state.countOnPage ) : choseWorks.length;
+
 		const tmp = [];
 			for(let i = from ; i < to ; i++) {
-					tmp.push(<WorkUnit key={works[i].id} unit={works[i]} />);
+					tmp.push(<WorkUnit key={choseWorks[i].id} unit={choseWorks[i]} />);
 			}
 			return tmp;
 	}
 
-	getPages() {
-		const pages = works.length / this.state.countOnPage;
+	getPages(choseWorks) {
+		const pages = (choseWorks.length % this.state.countOnPage) ? choseWorks.length / this.state.countOnPage + 1 : choseWorks.length / this.state.countOnPage;
 		const tmp = [];
 				for(let i = 1; i <= pages; i++) {
 					tmp.push (
@@ -46,16 +56,17 @@ class Works extends React.Component {
 	}
 
 	render () {
-
+		const choseWorks = this.state.shape ? works.filter((item) => item.shape === this.state.shape) : works;
 		return (
 				<section id="works" className="works">
 					<h1 className="text-center">Мои работы</h1>
+					<Sort choseShape={this.handleChoseShape} choseCount={this.handleCountOnPage} />
 					<div className='works-wrap'>
-							{this.getUnitsOnPage(works)}
+							{this.getUnitsOnPage(choseWorks)}
 					</div>
 					<div className="works-pagin">
 						<Pagination bsSize="large">
-							{this.getPages()}
+							{this.getPages(choseWorks)}
 						</Pagination>
 					</div>
 				</section>

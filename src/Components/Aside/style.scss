@@ -1,12 +1,12 @@
 @import './../../scss/common/variable.scss';
 @import './../../scss/common/mixins.scss';
 
-aside {
+.aside {
 	width: $aside_w;
 	padding: $gl_pt $gl_pl;
 	color: #fff;
-	ul {
-		margin-top: 30px;
+	.list-group {
+		margin: 0
 	}
 	.list-group-item {
 		cursor: pointer;
@@ -15,6 +15,37 @@ aside {
 			display: block;
 			font-size: 1.2em;
 			font-style: italic;
+		}
+	}
+	.navbar {
+		width: 100%;
+		border: none;
+		box-shadow: none;
+		background: transparent;
+		&-collapse {
+			padding:{
+				left: 0;
+				right: 0;
+			}
+		}
+	}
+	@media ($media_mid) {
+		position: absolute;
+		z-index: +1;
+		top: 40px;
+		width: auto;
+		padding: 0;
+		.navbar {
+			background: $gl_bg;
+		}
+		.navbar-header {
+			padding-left: 20px;
+		}
+		.navbar-toggle {
+			float: none;
+		}
+		.navbar-collapse {
+			border: none;
 		}
 	}
 }

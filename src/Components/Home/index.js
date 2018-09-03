@@ -11,15 +11,13 @@ export default () =>  {
 	return (
 			<section>
 				<h2 className="text-center">Мои навыки</h2>
-				{/*<ReactCSSTransitionGroup
-					transitionName="example"
-					transitionEnterTimeout={1500}
-				>
-					{tmp}
-				</ReactCSSTransitionGroup>*/}
 				<ReactCSSTransitionGroup
 					transitionName="example"
-					transitionEnterTimeout={1500}>
+					transitionAppear={true}
+					transitionAppearTimeout={1000}
+					transitionEnter={false}
+					transitionLeave={false}
+					>
 					{tmp}
 				</ReactCSSTransitionGroup>
 			</section>

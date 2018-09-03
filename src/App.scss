@@ -17,4 +17,8 @@ html, body {
 	background: -webkit-linear-gradient(left, #b7b7b7 0%,#b7b7b7 200px,#f6f6f6 200px,#f6f6f6 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to right, #b7b7b7 0%,#b7b7b7 200px,#f6f6f6 200px,#f6f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
+	
+	@media ($media_mid) {
+		background: #f6f6f6;
+	}
 }

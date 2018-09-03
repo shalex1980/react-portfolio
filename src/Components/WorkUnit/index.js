@@ -58,7 +58,7 @@ class WorkUnit extends React.Component {
 						</Modal.Header>
 	 					<Modal.Body>
 							<Image src={unit.img} responsive />
-							<Link className="modal-more" to={`/works/${unit.id}`}><span>Подробнее...</span></Link>
+							<Link className="modal-more" to={`/Portfolio/works/${unit.id}`}><span>Подробнее...</span></Link>
 						</Modal.Body>
 					</Modal>
 				</article>

@@ -1,14 +1,10 @@
-$step : 20px;
-$nth_size : (
-	nth-of-type(1): 20px,
-	nth-of-type(2): 40px,
-	nth-of-type(3): 60px,
-	nth-of-type(4): 80px,
-	);
-.skype {
+@import './../../scss/common/variable.scss';
+
+.skype, .telegram {
 	overflow: hidden;
-	border: solid 1px black;
+	border-bottom: solid 1px black;
 	h2 {
+		padding-left: 10px;
 		font: {
 			weight: bold;
 			style: italic;
@@ -17,7 +13,7 @@ $nth_size : (
 		color: blue;
 		span {
 			display: inline-block;
-			padding: 0 10px;
+			padding: 0 7px;
 			animation: rotat;
 			animation-duration: 3s;
 		}
@@ -32,10 +28,44 @@ $nth_size : (
 		span {
 			position: absolute;
 			display: inline-block;
-			padding: 0 5px;
-			@each $status, $size in $nth_size {
-				&:#{$status} {
-					left: $size;
+			font-size: 1.3em;
+		}
+		
+	}
+}
+.skype {
+	&__title {
+		span {
+			animation: left;
+			animation-duration: 3s;
+			@for $i from 1 through  15 {
+				&:nth-of-type(#{$i}) {
+					@if( $i <= 4 ) {
+						left: $step * $i;
+					} @else if($i > 4 ) {
+						left: $step * $i - 5;
+					}
+					animation-delay: 100ms * $i;
+				}
+			}
+		}
+	}
+}
+.telegram {
+	&__title {
+		span {
+			animation: left;
+			animation-duration: 3s;
+			@for $i from 1 through  13 {
+				&:nth-of-type(#{$i}) {
+          @if( $i <= 6 ) {
+          	left: $step * $i;
+          } @else if ($i > 6 and $i <= 9){
+          	left: $step * $i + 10;
+          } @else if ($i > 9) {
+          	left: $step * $i + 20;
+          }
+					animation-delay: 100ms * $i;
 				}
 			}
 		}
@@ -44,6 +74,9 @@ $nth_size : (
 
 @keyframes rotat {
 	0% {transform: rotate(0deg)}
-	//50% {transform: rotate(180deg)}
 	100% {transform: rotate(360deg)}
+}
+@keyframes left {
+	from {left: 100%}
+	to {left: 0px}
 }

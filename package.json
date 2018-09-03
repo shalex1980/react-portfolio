@@ -2,7 +2,7 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/Portfolio/",
+  "homepage": "./",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "node-sass-chokidar": "^1.3.3",

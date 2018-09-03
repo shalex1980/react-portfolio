@@ -1,12 +1,12 @@
-.example-enter {
+.example-appear {
   opacity: 0.01;
   width: 0;
 }
 
-.example-enter.example-enter-active {
+.example-appear.example-appear-active {
   opacity: 1;
   width: 100%;
-  transition: all 3s linear;
+  transition: all 1s linear;
 }
 
 .example-leave {
