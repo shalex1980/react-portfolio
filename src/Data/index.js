@@ -39,6 +39,7 @@ import img17_1 from 'assets/img/Glagol/Catalog.jpg';
 import img17_2 from 'assets/img/Glagol/Unit.jpg';
 import img17_3 from 'assets/img/Glagol/Unit_inner.jpg';
 import img18 from 'assets/img/HouseCanada.jpg';
+import img19 from 'assets/img/Token.jpg';
 
 const skills = [
 	{ id: "s123",
@@ -344,6 +345,18 @@ const works = [
 		'верстка',
 		],
 		source: 'http://ssz.ru/'
+	},
+	{
+		id: "19sergh",
+		img: img19,
+		shape: 1,
+		type: "Лендинг",
+		name: " В разработке",
+		metods: [
+		'резиновая верстка 1920 х 1200 рх',
+		'слайдеры, анимация'
+		],
+		source: 'http://worker.zz.mu/Token/'
 	},
  
 ]
