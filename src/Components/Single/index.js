@@ -21,7 +21,7 @@ export default ({match}) => {
 							{unit.metods.map((item, index) => <li key={index}>{item}</li>  )}
 						</ul>
 						<ul className="panel-buttons">
-							<li><Link to='/works' className="btn btn-default"><Glyphicon glyph="arrow-left" /> Назад </Link></li>
+							<li><Link to='/Portfolio/works' className="btn btn-default"><Glyphicon glyph="arrow-left" /> Назад </Link></li>
 							<li><a href={unit.source} className="btn btn-default" target='blank'>Сайт <Glyphicon glyph="arrow-right" /></a></li>
 						</ul>
 					</div>

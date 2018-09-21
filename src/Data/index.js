@@ -346,18 +346,7 @@ const works = [
 		],
 		source: 'http://ssz.ru/'
 	},
-	{
-		id: "19sergh",
-		img: img19,
-		shape: 1,
-		type: "Лендинг",
-		name: " В разработке",
-		metods: [
-		'резиновая верстка 1920 х 1200 рх',
-		'слайдеры, анимация'
-		],
-		source: 'http://worker.zz.mu/Token/'
-	},
+	
  
 ]
 
