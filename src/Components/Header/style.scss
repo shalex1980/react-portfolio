@@ -5,7 +5,10 @@ header {
 	height: $gl_h;
 	padding: $gl_pt $gl_pl;
 	color: #fff;
-	background: $gl_bg;
+	//background: $gl_bg;
+	background: url(./../../assets/img/header_fon.jpg) no-repeat left center;
+	background-size: cover;
+
 }
 .header {
 	display: flex;

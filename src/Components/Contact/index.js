@@ -1,5 +1,4 @@
 import React from 'react';
-//import { CSSTransitionGroup } from 'react-transition-group';
 import './style.css';
 
 export default () =>  {
