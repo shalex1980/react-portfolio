@@ -56,15 +56,20 @@
 		span {
 			animation: left;
 			animation-duration: 3s;
-			@for $i from 1 through  13 {
+			@for $i from 1 through  7 {
 				&:nth-of-type(#{$i}) {
-          @if( $i <= 6 ) {
+          /*@if( $i <= 6 ) {
           	left: $step * $i;
           } @else if ($i > 6 and $i <= 9){
           	left: $step * $i + 10;
           } @else if ($i > 9) {
           	left: $step * $i + 20;
-          }
+          }*/
+          @if( $i <= 2 ) {
+						left: $step * $i;
+					} @else if($i > 2 ) {
+						left: $step * $i - 8;
+					}
 					animation-delay: 100ms * $i;
 				}
 			}
